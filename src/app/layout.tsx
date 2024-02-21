@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import IframeMap from "./components/MapIframe";
 import { logo } from "@/assets/images";
-import Head from "next/head";
 import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
@@ -82,7 +81,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/public/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-      </Head>
+      </head>
       <body className="font-greycliff text-mainWhite">
         <Navbar />
         {children}

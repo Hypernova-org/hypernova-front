@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className=" flex justify-between px-[6%]  items-center">
       <div className="absolute inset-0 z-50 pointer-events-none">
-        <Snowfall
+        {/* <Snowfall
           wind={wind}
           snowflakeCount={100}
           style={{
@@ -44,7 +44,7 @@ const Navbar = () => {
             top: 0,
             bottom: 0,
           }}
-        />
+        /> */}
       </div>
       <Link href="/">
         <Image width={100} priority={true} alt="Logo" src={logo} />
